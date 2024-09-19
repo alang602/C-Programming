@@ -3,6 +3,8 @@
 #include <iostream>
 using namespace std;
 
+// C语言排序算法图示： https://blog.csdn.net/qq_64840642/article/details/141257378
+
 
 /*
     选择排序
