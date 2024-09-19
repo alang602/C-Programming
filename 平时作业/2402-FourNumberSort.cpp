@@ -5,6 +5,31 @@ using namespace std;
 
 
 /*
+    选择排序
+    选出最小的数和第一个数交换，再在剩余的数中又选择最小的和第二个数交换，依次类推
+
+*/
+void SelectionSort(int array[], int len) {
+
+    for (int i = 0; i < len - 1; i++) {
+        int min_index = i;
+
+        // 找到最小数的下标
+        for (int j = i + 1; j < len; j++) {
+            if (array[j] < array[min_index]) {
+                min_index = j;
+            }
+        }
+
+        //和min_index交换
+        int temp = array[min_index];
+        array[min_index] = array[i];
+        array[i] = temp;
+    }
+}
+
+
+/*
       插入排序：
 
       将第一个作为已经排好序的数组，然后将第2个元素插入到已经排好序的元素中，依次类推（插入排序最好的情况就是数组已经有序了）
@@ -68,7 +93,8 @@ int main()
 
     // Sort
     //BubbleSort(numberArray, 4);
-    InsertSort(numberArray, 4);
+    //InsertSort(numberArray, 4
+    SelectionSort(numberArray, 4);
 
     //Print
     for (int i = 0; i < 4; i++) {
