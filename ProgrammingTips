@@ -32,5 +32,7 @@ int main()
     return 0;
 }
 
-https://github.com/alang602/C-Programming/blob/main/images/01-CreateDynamicArray.jpg
+output:
+![Image text](https://github.com/alang602/C-Programming/blob/main/images/01-CreateDynamicArray.jpg)
+
 
