@@ -80,3 +80,56 @@ int main()
 
     return 0;
 }
+
+
+
+**动态创建二维数组(m*n)**
+/*
+      动态创建二维数组(m*n)
+
+      输入： 两个整数(m ,n )
+      输出： 二维数组, m行n列
+
+ */
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "please input two number(m n):";
+
+    int m;
+    int n;
+    cin >> m;
+    cin >> n;
+
+    //Create m*n
+    int** arr = (int**)malloc(m * sizeof(int*));
+    for (int i = 0; i < m; i++) {
+        arr[i] = (int*)malloc(n * sizeof(int));
+    }
+
+    //init
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            arr[i][j] = i * j;
+        }
+    }
+
+    //output
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    //remember to release memory
+    for (int i = 0; i < m; i++) {
+        free(arr[i]);
+    }
+    free(arr);
+
+    return 0;
+}
