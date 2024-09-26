@@ -13,6 +13,7 @@ using namespace std;
 
 int main()
 {
+    
     cout << "please input N:";
 
     int n;
@@ -101,6 +102,7 @@ using namespace std;
 
 int main()
 {
+   
     cout << "please input two number(m n):";
 
     int m;
