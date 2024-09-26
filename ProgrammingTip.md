@@ -19,7 +19,11 @@ int main()
     cin >> n;
 
     // Create Dynamic Array
-    int* pArray = (int*)malloc(sizeof(int));
+    int* pArray = (int*)malloc(n* sizeof(int));
+    if (pArray == NULL) {
+        cout << "malloc failed";
+        return 1;
+    }
     for (int i = 0; i < n; i++) {
         pArray[i] = i;
     }
@@ -28,6 +32,10 @@ int main()
     for (int i = 0; i < n; i++) {
         cout << pArray[i] << " ";
     }
+
+    //remember to release memory
+    free(pArray);
+
 
     return 0;
 }
