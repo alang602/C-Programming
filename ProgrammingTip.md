@@ -59,6 +59,7 @@ using namespace std;
 
 int main()
 {
+   
     cout << "please input N:";
 
     int n;
