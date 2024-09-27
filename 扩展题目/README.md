@@ -21,13 +21,14 @@ using namespace std;
 
 
 /*
-    填充数组matrix(size*size)
+        填充数组matrix(size*size)
 
 	起始下表(x,y)
 	初始值initValue
 */
 
 void fillMatrix(int** matrix, int x, int y, int size, int initValue) {
+
 
 	if (size == 0) return;
 
@@ -74,6 +75,7 @@ void fillMatrix(int** matrix, int x, int y, int size, int initValue) {
 
 int main()
 {
+
 	cout << "please input N:";
 	int N;
 	cin >> N;
