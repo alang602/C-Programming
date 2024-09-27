@@ -1,4 +1,4 @@
-**1. How to create Dynamic Array**
+**1. 动态创建一维数组**
 
 /*
      动态数组示例
