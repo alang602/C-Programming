@@ -45,23 +45,24 @@ int main() {
 int main()
 {
 
-    char s[] = "Golden Global   View,disk * desk";
+    char s[] = "Zhangsan,22222,90,80";
     
-    const char *d = " ,*";
+    const char* d = ",";
     
-    char *p;
+    char* p;
     
-    p = strtok(s,d);
+    p = strtok(s, d);
     
-    while(p)
+    while (p)
     
     {
     
-        printf("%s\n",p);
+        printf("%s\n", p);
         
-        p=strtok(NULL,d);
+        p = strtok(NULL, d);
         
     }
+    
     
  
     return 0;
