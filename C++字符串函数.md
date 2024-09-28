@@ -106,6 +106,37 @@ int main() {
 
 
 
+**字符串转换成整数**
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+
+using namespace std;
+
+
+#include <iostream>
+
+
+int main() {
+
+
+    //-----------------------------------------
+    //sscanf()函数将给定的字符串转换为指定的数据类型，比如整数。
+    const char* str_num = "555";
+    int numdata1;
+    sscanf(str_num, "%d", &numdata1);
+    cout << str_num << " " << numdata1 << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
