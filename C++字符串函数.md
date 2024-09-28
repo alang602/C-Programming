@@ -1,3 +1,26 @@
+**字符串数组拼接**
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+        char str1[50] = "Hello ";
+        
+        char str2[50] = "World!";
+        
+        strcat(str1, str2);
+        
+
+        std::cout << str1 << std::endl; // 输出: Hello World!
+        return 0;
+}
+
+
+
+
+
 
 **用strtok函数进行字符串分割**
 
