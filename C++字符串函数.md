@@ -1,7 +1,7 @@
 **字符串数组拼接**
 
 
-#include <iostream>
+#include <iostream.h>
 
 using namespace std;
 
