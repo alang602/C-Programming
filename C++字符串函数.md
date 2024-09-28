@@ -45,4 +45,68 @@ int main()
     
 }
 
+
+
+
+**strcmp比较字符串数组**
+
+
+#include <iostream>
+
+using namespace std;
+
+#include <iostream>
+
+#include <cstring> // 包含strcmp函数的头文件
+
+
+int main() {
+
+    //-------------------------------------------------
+    // strcmp
+    const char* str1 = "Hello";
+    
+    const char* str2 = "World";
+    
+    const char* str3 = "Hello";
+    
+
+    if (strcmp(str1, str2) < 0) {
+    
+        std::cout << str1 << " comes before " << str2 << std::endl;
+        
+    }
+    
+    else if (strcmp(str1, str2) > 0) {
+    
+        std::cout << str1 << " comes after " << str2 << std::endl;
+        
+    }
+    
+    else {
+    
+        std::cout << str1 << " is equal to " << str2 << std::endl;
+        
+    }
+    
+
+    // 字符串str1和str3相同，所以输出相等的信息
+    
+    if (strcmp(str1, str3) == 0) {
+    
+        std::cout << str1 << " is equal to " << str3 << std::endl;
+        
+    }
+    
+
+    return 0;
+}
+
+
+
+
+
+
+
+
 '
