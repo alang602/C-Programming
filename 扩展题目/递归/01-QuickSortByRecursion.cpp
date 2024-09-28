@@ -14,20 +14,23 @@ void sort(int arr[], int zz, int yy) {
         int y = yy;
         int k = arr[zz];
         do {
-
+            // 右边的元素>k，让y向中间移
             while ((z < y) && (arr[y] > k)) {
                 y = y - 1;
             }
 
+            // 右边的元素<=k
             if (z < y) {
                 arr[z] = arr[y];
                 z = z + 1;
             }
 
+            // 左边的元素<k，让z向中间移
             while ((z < y) && (arr[z] <= k)) {
                 z = z + 1;
             }
 
+            // 左边的元素>k
             if (z < y) {
                 arr[y] = arr[z];
                 y = y - 1;
