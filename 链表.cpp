@@ -304,7 +304,7 @@ int main()
 1 5
 3 1
 
-    建立链表，链表的(x,y)从nodes.txt每行读取, 
+    建立链表，链表的(x,y)从nodes.txt每行读取, , 链表的每个节点可以用malloc()动态生成：Node* pNode = (Node*)malloc(sizeof(Node)); 
     输出：将链表内容输出。
     
     要求：如果插入链表都是从头插入，编写程序。
