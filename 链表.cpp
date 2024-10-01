@@ -109,7 +109,9 @@ int main() {
 运行结果：
 8 3 10 5
 
-**链表有序操作：按照链表值排序**
+
+    
+**链表有序操作：按照链表节点中的值排序**
 
 
 
@@ -139,25 +141,25 @@ void insert(NumNode* &pHead, NumNode* pNode) {
         return;
     }
     
-    //链表不为空，插入位置在链表头
+    //链表不为空，插入节点的num值小于链表头节点的num，在表头插入
     if (pNode->num < pHead->num) {
         pNode->next = pHead;
         pHead = pNode;
         return;
     }
 
-    //链表不为空，插入位置不在表头
+    //链表不为空，插入的位置不在表头，需要循环找到插入位置
     NumNode* p = pHead;
     NumNode* q = pHead->next;
     while (q != NULL) {
         // 循环找插入位置
-        if (pNode->num > q->num) {
+        if (pNode->num < q->num) {
+            break;
+        }
+        // 没找到，继续往后找
+        else {
             p = q;
             q = q->next;
-        }
-        // 找到插入位置
-        else {
-            break;
         }
     }
     //插入位置在p/q之间
