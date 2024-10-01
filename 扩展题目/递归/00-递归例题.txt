@@ -77,3 +77,31 @@
 7. 建立二叉树  ： 《程序设计基础》 P180
 
 
+8. 二分法查找
+https://blog.csdn.net/qq_44377709/article/details/135896251
+
+public class 二分查找 {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 5, 6, 7, 9, 22, 33, 66, 78, 81, 99, 100};
+        int targetNum = 3;
+        System.out.println(binarySearch(arr, targetNum, 0, arr.length));
+    }
+
+    private static int binarySearch(int[] arr, int targetNum, int left, int right) {
+        if (left > right) {
+            return -1;
+        }
+        int mid = (left + right) >>> 1;
+        if (arr[mid] < targetNum) {
+            return binarySearch(arr, targetNum, mid + 1, right);
+        } else if (arr[mid] > targetNum) {
+            return binarySearch(arr, targetNum, left, mid - 1);
+        } else {
+            return mid;
+        }
+    }
+}
+
+
+
