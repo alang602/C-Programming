@@ -68,7 +68,7 @@ int main()
         return 1;
     }
 
-    int* pArray = new int[n];
+    int* pArray = new int[100];
     int pos = 0;
     do{
         int c = n % 10;
