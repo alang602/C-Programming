@@ -1,7 +1,7 @@
 **字符串数组拼接**
 
 
-#include <iostream.h>
+#include <iostream>
 
 using namespace std;
 
@@ -38,7 +38,7 @@ int main() {
 
 //借助strtok实现split
 
-#include <string.h>
+#include <string>
 
 #include <stdio.h>
  
@@ -134,7 +134,7 @@ int main() {
 
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <iostream.h>
+#include <iostream>
 
 using namespace std;
 
