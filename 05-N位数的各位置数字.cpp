@@ -39,6 +39,35 @@ please input a 4-digital number:8534
 
 
 
+      
+
+/*
+    求出所有水仙花数
+
+    水仙花数是指一个 3 位数，它的每个数位上的数字的 3次幂之和等于它本身。例如：1^3 + 5^3+ 3^3 = 153。
+
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int n = 100; n < 1000; n++) {
+        int GeWei = n % 10;
+        int ShiWei = (n / 10) % 10;
+        int BaiWei = (n / 100) %10;
+
+        if (n == (pow(GeWei, 3) + pow(ShiWei, 3) + pow(BaiWei, 3))) {
+            cout<<n<<endl;
+        }
+    }
+
+    return 0;
+}
+
+
+
 
 
 
