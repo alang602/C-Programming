@@ -8,7 +8,7 @@
      输出：打印数组内容
 */
 
-#include \<iostream\>
+#include <iostream>
 
 using namespace std;
 
@@ -55,7 +55,7 @@ int main()
      输出：打印数组内容
 */
 
-#include \<iostream\>
+#include <iostream>
 
 using namespace std;
 
@@ -100,7 +100,7 @@ int main()
 
  */
 
-#include \<iostream\>
+#include <iostream>
 
 using namespace std;
 
@@ -114,7 +114,7 @@ int main()
     cin >> m;
     cin >> n;
 
-    //Create m*n
+    //Create m*n 数组（m行，n列）
     int** arr = (int**)malloc(m * sizeof(int*));
     for (int i = 0; i < m; i++) {
         arr[i] = (int*)malloc(n * sizeof(int));
