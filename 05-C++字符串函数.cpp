@@ -37,6 +37,8 @@ int main() {
 示例：
 
 //借助strtok实现split
+#define _CRT_SECURE_NO_WARNINGS
+
 
 #include <string>
 
@@ -68,6 +70,13 @@ int main()
     return 0;
     
 }
+
+
+输出：
+Zhangsan
+22222
+90
+80
 
 
 
