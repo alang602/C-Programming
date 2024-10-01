@@ -6,7 +6,7 @@
 using namespace std;
 
 
-
+// zz: 开始下标，  yy: 终止下标
 void sort(int arr[], int zz, int yy) {
 
     if (zz < yy) {
