@@ -19,7 +19,7 @@ void sort(int arr[], int zz, int yy) {
                 y = y - 1;
             }
 
-            // 右边的元素<=k
+            // 右边的元素arr[y]<=k, 把arr[y]送给arr[z], 同时让z往中间移
             if (z < y) {
                 arr[z] = arr[y];
                 z = z + 1;
@@ -30,16 +30,16 @@ void sort(int arr[], int zz, int yy) {
                 z = z + 1;
             }
 
-            // 左边的元素>k
+            // 左边的元素arr[z] >k,把arr[z]送给arr[y],同时让y往中间移
             if (z < y) {
                 arr[y] = arr[z];
                 y = y - 1;
             }
         } while (z != y);
 
-        arr[z] = k;
-        sort(arr, zz, z - 1);
-        sort(arr, z + 1, yy);
+        arr[z] = k;           // k已经排到位
+        sort(arr, zz, z - 1);   //递推，排左边部分
+        sort(arr, z + 1, yy);   //递推，排右边部分
     }
 }
 
