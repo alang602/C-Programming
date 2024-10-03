@@ -1,6 +1,7 @@
-
 /*
      汉诺塔（递归）
+
+     有N个盘子从小到大垒在在A柱子上，想要移动到C上，可以借助中间的B柱子
 */
 #include <iostream>
 using namespace std;
