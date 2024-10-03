@@ -83,3 +83,20 @@ int main()
     return 0;
 }
 
+
+运行结果：
+Please input a value(-1 means end):4
+Please input a value(-1 means end):2
+Please input a value(-1 means end):7
+Please input a value(-1 means end):1
+Please input a value(-1 means end):3
+Please input a value(-1 means end):9
+Please input a value(-1 means end):6
+Please input a value(-1 means end):-1
+1
+2
+3
+4
+6
+7
+9
