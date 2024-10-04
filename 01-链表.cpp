@@ -290,7 +290,7 @@ int main()
 
 
     
-
+思考题：
 /*
     输入：读取nodes.txt，文件内容如下
 
@@ -300,12 +300,21 @@ int main()
 1 5
 3 1
 
-    建立链表，链表的(x,y)从nodes.txt每行读取, , 链表的每个节点可以用malloc()动态生成：Node* pNode = (Node*)malloc(sizeof(Node)); 
+    建立链表，链表节点结构可以定义成：
+    struct NumNode {
+
+    int x;
+    int y;
+    NumNode* next;
+};
+
+    链表的(x,y)从nodes.txt每行读取,  链表的每个节点可以用malloc()动态生成：Node* pNode = (Node*)malloc(sizeof(Node)); 
     输出：将链表内容输出。
     
-    要求：如果插入链表都是从头插入，编写程序。
+    要求：
+    1)  如果插入链表都是从头插入，编写一个程序。
 
-    另外，如果插入链表是按照x升序排序，例如：
+    2)  如果插入链表是按照x升序排序，例如：
         1 1
         1 5
         3 1
