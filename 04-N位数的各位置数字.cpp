@@ -54,6 +54,7 @@ using namespace std;
 int main()
 {
     for (int n = 100; n < 1000; n++) {
+        // 取得个位、十位、百位
         int GeWei = n % 10;
         int ShiWei = (n / 10) % 10;
         int BaiWei = (n / 100) %10;
@@ -72,11 +73,11 @@ int main()
 
 
 
-**输入： 一个N位整数，不确定N,输出： 各位数字**
+**输入： 一个N位整数，不确定N,  输出： 各位数字**
 
 
 /*
-      输入： 一个N位整数，不确定N
+      输入： 一个整数n，不确定n有多少位
       输出： 各位数字
  */
 
@@ -88,7 +89,7 @@ using namespace std;
 int main()
 {
     
-    cout << "please input a N-digital number:";
+    cout << "please input a number:";
 
     int n;
     cin >> n;
@@ -97,6 +98,7 @@ int main()
         return 1;
     }
 
+    // pArray中依次存储的是个位、十位、百位......
     int* pArray = new int[100];
     int pos = 0;
     do{
@@ -107,7 +109,7 @@ int main()
         n = (n - c)/10;
     } while (n > 0);
 
-    //output
+    //output: 倒序打印就是n
     for (int i = pos - 1; i >= 0; i--) {
         cout << pArray[i] << " ";
     }
