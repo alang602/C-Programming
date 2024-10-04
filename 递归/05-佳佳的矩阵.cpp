@@ -67,14 +67,14 @@ void fillMatrix(int** matrix, int x, int y, int size, int initValue) {
 		return;
 	}
 
-	// 右
+	// 打印右边一列
 	for (int i = 0; i < size; i++) {
 		matrix[x][y] = initValue;
 		x++;
 		initValue++;
 	}
 
-	//下
+	//打印下面一行
 	x = x - 1;
 	for (int i = 0; i < size - 1; i++) {
 		y--;
@@ -82,14 +82,14 @@ void fillMatrix(int** matrix, int x, int y, int size, int initValue) {
 		initValue++;
 	}
 
-	//左
+	//打印左边一列
 	for (int i = 0; i < size - 1; i++) {
 		x--;
 		matrix[x][y] = initValue;
 		initValue++;
 	}
 
-	//上
+	//打印上面一行
 	for (int i = 0; i < size - 2; i++) {
 		y++;
 		matrix[x][y] = initValue;
