@@ -47,7 +47,7 @@ int main()
 }
 
 
-输出：
+运行结果：
 please input N:4
 0 1 2 3
 
@@ -159,6 +159,12 @@ int main()
     return 0;
 }
 
+
+运行结果：
+please input two number(m n):3 4
+0 0 0 0
+0 1 2 3
+0 2 4 6
 
 
 
