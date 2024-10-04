@@ -65,3 +65,9 @@ int main()
     return 0;
 }
 
+
+运行结果：
+please input 7 number:
+4 3 9 2 33 22 5
+2 3 4 5 9 22 33
+    
