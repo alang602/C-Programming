@@ -29,7 +29,7 @@ void insert(Tree* &pRoot, Tree* pNode) {
         return;
     }
 
-    // 如果小于等于根节点，插入左子树
+    // 如果待插入节点的值小于等于根节点，插入左子树
     if (pNode->data <= pRoot->data) {
         insert(pRoot->Left, pNode);
     }
@@ -41,7 +41,7 @@ void insert(Tree* &pRoot, Tree* pNode) {
 }
 
 
-//打印树
+//中序打印树，先打印左子树，再打印根节点，最后打印右子树
 void print(Tree* pRoot) {
     if (pRoot == NULL) {
         return;
@@ -100,3 +100,5 @@ Please input a value(-1 means end):-1
 6
 7
 9
+
+
