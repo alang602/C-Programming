@@ -1,8 +1,9 @@
 **字符串数组拼接**
 
 
-#include <iostream>
 
+/*  strcat 将两个字符串拼接成一个字符串 */
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -26,7 +27,7 @@ int main() {
 
 原型： char *strtok(char *str, const char *delim);
 
-功能：分解字符串为一组字符串。
+功能：按照分隔符分割字符串，分割成一组字符串。
 
 参数说明：str为要分解的字符串，delim为分隔符字符串。
 
@@ -40,6 +41,7 @@ int main() {
 #define _CRT_SECURE_NO_WARNINGS
 
 
+//需要引入string头文件
 #include <string>
 
 #include <stdio.h>
@@ -87,8 +89,6 @@ Zhangsan
 #include <iostream>
 
 using namespace std;
-
-#include <iostream>
 
 #include <cstring> // 包含strcmp函数的头文件
 
