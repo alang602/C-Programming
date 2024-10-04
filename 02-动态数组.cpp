@@ -47,6 +47,12 @@ int main()
 }
 
 
+输出：
+please input N:4
+0 1 2 3
+
+
+     
 
 
 **另一种写法：**
