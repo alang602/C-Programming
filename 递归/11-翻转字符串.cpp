@@ -17,7 +17,10 @@ void reverse(char arr[], int index) {
         return;
     }
 
+    // 递归翻转index+1 到结尾的字符
     reverse(arr, index + 1);
+
+    //打印当前index的字符
     cout << arr[index];
 
     return;
