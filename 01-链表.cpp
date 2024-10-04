@@ -8,7 +8,6 @@
 using namespace std;
 
 // 链表每个节点
-
 struct NumNode {
 
     int num;
@@ -16,7 +15,7 @@ struct NumNode {
 };
 
 // 插入节点
-
+// 需要注意的是，输入参数pHead在函数中有可能会变，所以传入需要到地址符&
 void insert(NumNode*& pHead, NumNode* pNode) {
 
     // 链表为空的情况
@@ -36,7 +35,6 @@ void insert(NumNode*& pHead, NumNode* pNode) {
 }
 
 // 打印
-
 void print(NumNode* pHead) {
 
     NumNode* p = pHead;
@@ -49,8 +47,7 @@ void print(NumNode* pHead) {
     return;
 }
 
-// 释放链表
-
+// 释放链表，防止内存泄漏
 void release(NumNode* pHead) {
 
     NumNode* p = pHead;
@@ -110,20 +107,16 @@ int main() {
 8 3 10 5
 
 
+
+
     
-**链表有序操作：按照链表节点中的值排序**
-
-
-
-
-
+**有序链表：按照链表节点中的值排序**
 #include <iostream>
 
 using namespace std;
 
 
 // 链表每个节点
-
 struct NumNode {
 
     int num;
@@ -132,7 +125,7 @@ struct NumNode {
 
 
 // 插入节点
-
+// 需要注意的是，输入参数pHead在函数中有可能会变，所以传入需要到地址符&
 void insert(NumNode* &pHead, NumNode* pNode) {
 
     // 链表为空的情况
@@ -141,7 +134,7 @@ void insert(NumNode* &pHead, NumNode* pNode) {
         return;
     }
     
-    //链表不为空，插入节点的num值小于链表头节点的num，在表头插入
+    //链表不为空，插入节点的num值小于链表头节点的num，表示在表头插入
     if (pNode->num < pHead->num) {
         pNode->next = pHead;
         pHead = pNode;
@@ -170,7 +163,6 @@ void insert(NumNode* &pHead, NumNode* pNode) {
 }
 
 // 打印
-
 void print(NumNode* pHead) {
 
     NumNode* p = pHead;
@@ -185,7 +177,6 @@ void print(NumNode* pHead) {
 
 
 // 释放链表
-
 void release(NumNode* pHead) {
 
     NumNode* p = pHead;
@@ -296,6 +287,9 @@ int main()
 3 8 10
 
 
+
+
+    
 
 /*
     输入：读取nodes.txt，文件内容如下
