@@ -1,11 +1,17 @@
 /*
      二分法查找
+     输入：一个已经排好序的数组，和一个待查找的整数n
+     输出：如果找到, 输出数组下标。没找到输出-1
 
      递归实现
 */
 #include <iostream>
 using namespace std;
 
+// 二分法查找：先比较中间的节点和要查找的整数的大小：
+//  1)  如果相等，结束递归。 
+//  2)  如果待查找的数小于中间的节点值，递推查找前半部分数组
+//  3)  如果待查找的数大于中间的节点值，递推查找后半部分数组
 int BinarySearch(int arr[], int left, int right, int targetNum) {
     if (left > right) {
         return -1;
