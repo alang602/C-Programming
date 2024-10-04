@@ -35,7 +35,7 @@
 
 7  6  5  4
 
-然后再打印内部的
+然后再递归打印内部的圈
 
 */
 
@@ -105,18 +105,18 @@ void fillMatrix(int** matrix, int x, int y, int size, int initValue) {
 
 int main()
 {
-
+        
 	cout << "please input N:";
 	int N;
 	cin >> N;
 
-	// 根据输入N，动态创建二维数组： N*N
+	// 这里的二维数组不是固定大小的，需要根据输入N，动态创建二维数组： N*N
 	int** matrix = (int**)malloc(N * sizeof(int*));
 	for (int i = 0; i < N; i++) {
 		matrix[i] = (int*)malloc(N * sizeof(int));
 	}
 
-	// 起始点1是：第0行N-列：
+	// 起始点1是在：第0行N-列：
 	fillMatrix(matrix, 0, N-1, N, 1);
 
 	//print
