@@ -110,12 +110,13 @@ int main()
 	int N;
 	cin >> N;
 
-	// Create matrix: N*N
+	// 根据输入N，动态创建二维数组： N*N
 	int** matrix = (int**)malloc(N * sizeof(int*));
 	for (int i = 0; i < N; i++) {
 		matrix[i] = (int*)malloc(N * sizeof(int));
 	}
 
+	// 起始点1是：第0行N-列：
 	fillMatrix(matrix, 0, N-1, N, 1);
 
 	//print
@@ -127,7 +128,7 @@ int main()
 		cout << endl;
 	}
 
-	//free
+	//记得释放动态二维数组，防止内存泄漏
 	for (int i = 0; i < N; i++) {
 		free(matrix[i]);
 	}
