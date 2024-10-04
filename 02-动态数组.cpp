@@ -3,8 +3,9 @@
 /*
      动态数组示例
 
+     原因：有时候题目是要求的数组的长度是根据输入N决定的，比如用户输入整数N，程序创建一个长度为N的数组。 这样动态创建数组的时候，需要会使用下面代码。
      输入：整数n
-     处理：创建一维数组array[n]
+     处理：创建一维数组array[n]，并给每个元素赋值
      输出：打印数组内容
 */
 
@@ -20,7 +21,7 @@ int main()
     int n;
     cin >> n;
 
-    // Create Dynamic Array
+    // Create Dynamic Array，pArray指向数组头，数组长度是n，每个元素大小是sizeof(int)
     int* pArray = (int*)malloc(n* sizeof(int));
     if (pArray == NULL) {
         cout << "malloc failed";
