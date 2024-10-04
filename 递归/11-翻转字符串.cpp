@@ -1,9 +1,9 @@
 /*
     使用递推反转字符串
 
-    输入：wrewtyu
+    输入字符串：wrewtyu
 
-    输出：uytwerw
+    输出：翻转之后的字符串：uytwerw
 */
 
 #define _CRT_SECURE_NO_WARNINGS
