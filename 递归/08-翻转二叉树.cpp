@@ -1,29 +1,21 @@
 /*
-    使用递归建立二叉树
-
-    1) 输入：root = [4,2,7,1,3,6,9]
-2) 创建二叉树
-
-        4
-   2        7
-1    3   6     9
-
-
-
-
      使用递归翻转二叉树：
 1) 输入：root = [4,2,7,1,3,6,9]
 
-使用"7. 建立二叉树"，创建二叉树
+
+2） 创建二叉树
         4
    2        7
 1    3   6     9
 
-翻转二叉树
-输出：二叉树
+
+3） 翻转二叉树
         4
    7        2
 9    6   3     1
+
+4） 输出：二叉树
+
 */
 
 #include <iostream>
@@ -57,7 +49,7 @@ void insert(Tree* &pRoot, Tree* pNode) {
 }
 
 
-//打印树
+//中序打印树
 void print(Tree* pRoot) {
     if (pRoot == NULL) {
         return;
@@ -79,15 +71,17 @@ void reverse(Tree* pRoot) {
         return;
     }
 
-    // 前序遍历
+    // 左右节点先翻转
     Tree* p = pRoot->Left;
     pRoot->Left = pRoot->Right;
     pRoot->Right = p;
 
+    // 递归翻转左子树
     if (pRoot->Left != NULL) {
         reverse(pRoot->Left);
     }
 
+    // 递归翻转右子树
     if (pRoot->Right != NULL) {
         reverse(pRoot->Right);
     }
