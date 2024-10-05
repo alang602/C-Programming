@@ -1,0 +1,55 @@
+/*
+    数组传入函数的例子
+*/
+#include <iostream>
+using namespace std;
+
+
+//一维数组传入函数
+void printArray(int arr[],int size) {
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << endl;
+    }
+}
+
+
+//二维数组(m*n)传入函数,需要知名m列
+void printSecondArray(int (*arr)[3], int m, int n) {
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cout << arr[i][j] << endl;
+        }
+        
+    }
+}
+
+
+int main()
+{
+    int arr[3] = { 10,20,30 };
+    printArray(arr, 3);
+
+    cout << "===================" << endl;;
+
+    int secondArray[2][3] = { {10,20,30}, {40,50,60} };
+    printSecondArray(secondArray, 2, 3);
+
+
+    return 0;
+
+}
+
+
+运行结果：
+
+10
+20
+30
+===================
+10
+20
+30
+40
+50
+60
+
