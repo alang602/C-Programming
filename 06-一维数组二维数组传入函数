@@ -13,7 +13,7 @@ void printArray(int arr[],int size) {
 }
 
 
-//二维数组(m*n)传入函数,需要知名m列
+//二维数组(m*n)传入函数,需要指明n，这里 int (*arr)[3]
 void printSecondArray(int (*arr)[3], int m, int n) {
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
@@ -38,6 +38,7 @@ int main()
     return 0;
 
 }
+
 
 
 运行结果：
