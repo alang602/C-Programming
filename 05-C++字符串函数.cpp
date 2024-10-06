@@ -156,19 +156,17 @@ int main() {
 
 
 
-    //-----------------------------------------
-    //sscanf()函数将给定的字符串转换为指定的数据类型，比如整数。
-    const char* str_num = "555";
-    int numdata1;
-    sscanf(str_num, "%d", &numdata1);
-    cout << str_num << " " << numdata1 << endl;
+    //5. 字符数组转换成int
+    char arr[10] = "120";
+    int num2 = atoi(arr);
+    cout << num2 << endl;
 
     return 0;
 }
 
 输出：
 
-555 555
+120
 
 
 
