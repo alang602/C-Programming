@@ -33,7 +33,7 @@ int main()
     //以逗号分割字符串
     stringstream ss(inputLine);
     string targetWord;
-    while (getline(ss, targetWord, ',') ){
+    while (getline(ss, targetWord, ',') ){    // 使用单引号，不能使用双引号
         cout << targetWord << " ";
     }
 
