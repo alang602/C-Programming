@@ -23,15 +23,17 @@ int main()
        sprintf: 跟printf类似，都是用于输出的, 只是打印的目的地不同而已，sprintf打印到字符串中，printf则直接在控制台上输出
     */
     // sscanf例子
+    // 就是将str1按照"%d"格式化输入到number1中，可以用来将字符串转换成整数，相当于 str1 --> number1
     char str1[10] = "-12345";
     int number1;
-    sscanf(str1, "%d", &number1);  // 就是将str1按照"%d"格式化输入到number1中，可以用来将字符串转换成整数
+    sscanf(str1, "%d", &number1);  
     cout << number1 << endl;
 
     // sprintf例子
+    // 将number2按照"%d"格式化输出到str2中，可以用来将整数转换成字符串，相当与  str2 <-- number2
     int number2 = -12345;
     char str2[10];
-    sprintf(str2, "%d", number2);  //将number2按照"%d"格式化输出到str2中，可以用来将整数转换成字符串
+    sprintf(str2, "%d", number2);  
     cout << str2 << endl;
 
     return 0;
