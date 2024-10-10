@@ -15,6 +15,10 @@ int main() {
         
 
         std::cout << str1 << std::endl; // 输出: Hello World!
+
+        int a = strlen(str1);
+        std::cout<<a<<endl;             // 输出长度
+        
         return 0;
 }
 
