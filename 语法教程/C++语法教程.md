@@ -19,3 +19,8 @@ https://blog.csdn.net/qq_44859843/article/details/131245655
 
 https://www.luogu.com/article/6b8nxr33
 
+
+
+
+C++ 控制台：写小应用/小游戏时各种技术上所需的小代码之合集
+https://www.bilibili.com/read/cv13445891/
